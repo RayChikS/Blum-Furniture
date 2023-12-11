@@ -31,22 +31,59 @@
               placeholder="Поиск..."
             />
             <button class="search-btn" type="submit">
-              <img
-                class="search-img"
-                src="images/icons8-search.svg"
-                alt="search"
-                width="30"
-                height="30"
-              />
+              <svg class="btn-icon" width="22" height="27">
+                <use href="./images/symbol-defs.svg#icon-search"></use>
+              </svg>
             </button>
           </form>
         </nav>
+
+        <address class="address">
+          <ul class="address-list list">
+            <li class="address-item">
+              <svg class="address-icon" width="15" height="15">
+                <use href="./images/symbol-defs.svg#icon-envelop"></use>
+              </svg>
+              <a class="address-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com
+              </a>
+            </li>
+            <li class="address-item">
+              <svg class="address-icon" width="15" height="15">
+                <use href="./images/symbol-defs.svg#icon-phone"></use>
+              </svg>
+              <a class="address-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11
+              </a>
+            </li>
+          </ul>
+        </address>
       </div>
     </header>
 
     <!-- MAIN -->
     <main class="main">
-      <div class="main-content container"></div>
+      <section class="categories">
+        <div class="categories-content container">
+          <h2 class="categories-title">
+            <svg class="categories-title-icon" width="20" height="20">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+            Категории
+          </h2>
+          <ul class="categories-list">
+            <svg class="categories-title-icon" width="15" height="15">
+              <use href="./images/symbol-defs.svg#icon-arrow"></use>
+            </svg>
+            <li class="categories-list-item">Категория 1</li>
+            <li class="categories-list-item">Категория 2</li>
+            <li class="categories-list-item">Категория 3</li>
+            <li class="categories-list-item">Категория 4</li>
+            <li class="categories-list-item">Категория 5</li>
+            <li class="categories-list-item">Категория 6</li>
+          </ul>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->

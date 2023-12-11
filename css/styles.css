@@ -14,6 +14,8 @@
   --white: #fff;
   --black: #000;
   --ocean: #404bbf;
+  --brezze: #1c6bb5;
+  --darkBrezze: #15436f;
 }
 
 @font-face {
@@ -32,9 +34,8 @@
 body {
   font-family: "Roboto";
   margin: 0;
-  color: #000;
-  background-color: ;
-  /* font-family: ; */
+  color: var(--black);
+  background-color: var(--white);
 }
 
 ul,
@@ -89,13 +90,19 @@ p {
 */
 
 .header {
-  padding: 15px;
+  padding: 5px;
+  margin-bottom: 40px;
   background-color: var(--ocean);
+  border-bottom: 2px solid var(--darkBrezze);
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -106,6 +113,7 @@ p {
   color: var(--white);
   width: 40px;
   font-weight: 700;
+  margin-right: 450px;
 }
 
 .search {
@@ -117,7 +125,7 @@ p {
   width: 100%;
   height: 42px;
   padding-left: 10px;
-  border: 2px solid #155591;
+  border: 2px solid var(--brezze);
   border-radius: 5px;
   outline: none;
   background: var(--white);
@@ -125,17 +133,54 @@ p {
 }
 .search-btn {
   position: absolute;
+  text-align: center;
   top: 0;
   right: 0px;
   width: 42px;
   height: 42px;
   border: none;
-  background: #155591;
+  background-color: var(--brezze);
   border-radius: 0 5px 5px 0;
   cursor: pointer;
 }
 .search-btn:hover {
   font-size: 16px;
-  background-color: #0d4172;
-  border: 2px solid #155591;
+  background-color: var(--darkBrezze);
+  border: 2px solid var(--brezze);
+}
+.search-btn:hover .btn-icon {
+  fill: var(--white);
+}
+
+.address-item:not(last-child) {
+  margin-bottom: 10px;
+}
+.address-link {
+  color: var(--white);
+}
+.address-link:hover {
+  text-decoration: underline;
+}
+.address-icon {
+  fill: var(--white);
+  margin-right: 5px;
+}
+
+/**
+	|============================
+	| MAIN
+	|============================
+*/
+.categories-title {
+  padding: 5px;
+  text-align: left;
+  max-width: 300px;
+  color: var(--white);
+  background-color: var(--ocean);
+  border-radius: 4px;
+}
+.categories-title-icon {
+  margin-left: 15px;
+  margin-right: 20px;
+  fill: var(--white);
 }
