@@ -13,6 +13,7 @@
 :root {
   --white: #fff;
   --black: #000;
+  --lightGray: rgba(0, 0, 0, 0.06);
   --ocean: #404bbf;
   --brezze: #1c6bb5;
   --darkBrezze: #15436f;
@@ -171,6 +172,25 @@ p {
 	| MAIN
 	|============================
 */
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+}
+.hero-img {
+  border-radius: 10px;
+  width: 850px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.categories-content {
+  background-color: var(--lightGray);
+  min-width: 300px;
+  max-height: 285px;
+}
+.categories-list-item:not(last-child) {
+  margin-bottom: 15px;
+}
 .categories-title {
   padding: 5px;
   text-align: left;
@@ -183,4 +203,46 @@ p {
   margin-left: 15px;
   margin-right: 20px;
   fill: var(--white);
+}
+.categories-list-link {
+  padding: 5px 10px;
+  color: var(--black);
+  font-size: 18px;
+}
+.categories-list-link:hover {
+  background-color: rgb(227, 227, 227);
+}
+
+.slider-content {
+  position: relative;
+  max-width: 850px;
+  max-height: 450px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  font-size: 24px;
+  color: white;
+}
+.prev-button:hover,
+.next-button:hover {
+  background-color: rgba(0, 0, 0, 0.06);
+}
+.prev-button {
+  left: 10px;
+}
+.next-button {
+  right: 10px;
 }
