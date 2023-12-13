@@ -89,12 +89,67 @@ p {
 	| HEADER
 	|============================
 */
+.top-line-content {
+  background-color: var(--ocean);
+  box-shadow: 0 2px 5px #969696;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-line-list {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 0;
+}
+.top-line-link {
+  color: var(--white);
+}
+
+.dropdawn {
+  background-color: #4c57d7;
+  padding: 15px 10px;
+  margin-left: -2px;
+}
+.dropdawn:hover {
+  border-bottom: 1px solid #00d4fb;
+}
+.dropdawn-icon {
+  fill: var(--white);
+}
+.dropdawn-link {
+  color: var(--white);
+}
+.dropdawn-info {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 1240px;
+  min-width: 124px;
+  padding: 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  text-align: left;
+  z-index: 1000;
+  background-color: var(--white);
+}
+.dropdawn-content:hover > .dropdawn-info {
+  display: block;
+}
 
 .header {
-  padding: 5px;
+  padding-top: 80px;
+  padding-bottom: 15px;
   margin-bottom: 40px;
-  background-color: var(--ocean);
-  border-bottom: 2px solid var(--darkBrezze);
+  box-shadow: 0 2px 5px #969696;
 }
 .header-content {
   display: flex;
@@ -109,16 +164,15 @@ p {
 
 .logo {
   display: flex;
+  font-size: 25px;
   align-items: center;
-  gap: 5px;
-  color: var(--white);
-  width: 40px;
+  gap: 8px;
+  color: var(--black);
+  max-width: 120px;
   font-weight: 700;
-  margin-right: 450px;
 }
 
 .search {
-  margin: 0 auto;
   position: relative;
   width: 300px;
 }
@@ -153,18 +207,18 @@ p {
   fill: var(--white);
 }
 
-.address-item:not(last-child) {
-  margin-bottom: 10px;
+.address {
+  max-width: 290px;
 }
 .address-link {
-  color: var(--white);
+  color: var(--black);
 }
 .address-link:hover {
   text-decoration: underline;
 }
 .address-icon {
-  fill: var(--white);
-  margin-right: 5px;
+  fill: var(--black);
+  margin-left: 7px;
 }
 
 /**

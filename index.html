@@ -8,19 +8,20 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
-      <div class="header-content container">
-        <nav class="nav">
-          <a class="logo" href="./index.html">
-            <img
-              class="logo-img"
-              src="./images/logo.png"
-              alt="logo"
-              width="50"
-              height="50"
-            />
-            Blum Furniture
-          </a>
+    <div class="top-line">
+      <div class="top-line-content">
+        <div class="inner container">
+          <ul class="top-line-list">
+            <li class="top-line-item">
+              <a class="top-line-link" href="index.html">Головна</a>
+            </li>
+            <li class="top-line-item">
+              <a class="top-line-link" href="#">Про нас</a>
+            </li>
+            <li class="top-line-item">
+              <a class="top-line-link" href="#">Політика Конфіденційності</a>
+            </li>
+          </ul>
 
           <form class="search" id="search-form">
             <input
@@ -28,7 +29,7 @@
               type="text"
               name="searchQuery"
               autocomplete="off"
-              placeholder="Поиск..."
+              placeholder="Пошук..."
             />
             <button class="search-btn" type="submit">
               <svg class="btn-icon" width="22" height="27">
@@ -36,30 +37,57 @@
               </svg>
             </button>
           </form>
-        </nav>
 
-        <address class="address">
-          <ul class="address-list list">
-            <li class="address-item">
-              <svg class="address-icon" width="15" height="15">
-                <use href="./images/symbol-defs.svg#icon-envelop"></use>
-              </svg>
-              <a class="address-link" href="mailto:info@devstudio.com"
-                >info@devstudio.com
+          <div class="dropdawn">
+            <div class="dropdawn-content">
+              <a class="dropdawn-link" href="#">
+                <svg class="dropdawn-icon" width="15" height="15">
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
+                </svg>
+                Час роботи
               </a>
-            </li>
-            <li class="address-item">
-              <svg class="address-icon" width="15" height="15">
-                <use href="./images/symbol-defs.svg#icon-phone"></use>
-              </svg>
-              <a class="address-link" href="tel:+110001111111"
-                >+11 (000) 111-11-11
-              </a>
-            </li>
-          </ul>
-        </address>
+              <div class="dropdawn-info">
+                <div class="dropdawn-info-content">
+                  <p class="dropdawn-info-text">Пн-пт</p>
+                  <p class="dropdawn-info-num">8:00 - 18:00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </header>
+
+      <header class="header">
+        <div class="header-content container">
+          <nav class="nav">
+            <a class="logo" href="./index.html">
+              <img
+                class="logo-img"
+                src="./images/logo.png"
+                alt="logo"
+                width="100"
+                height="100"
+              />
+              Blum Furniture
+            </a>
+          </nav>
+
+          <address class="address">
+            <p class="address-text">
+              Для замовлення або повідомлення про проблему:
+              <span class="address-span">
+                <svg class="address-icon" width="15" height="15">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <a class="address-link" href="tel:+38050658754"
+                  >+38050658754
+                </a>
+              </span>
+            </p>
+          </address>
+        </div>
+      </header>
+    </div>
 
     <!-- MAIN -->
     <main class="main">
@@ -70,7 +98,7 @@
               <svg class="categories-title-icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-menu"></use>
               </svg>
-              Категории
+              Категорії
             </h2>
             <ul class="categories-list">
               <li class="categories-list-item">
